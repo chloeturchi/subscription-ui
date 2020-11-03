@@ -55,9 +55,7 @@ const PageLayout = styled.div`
   display: grid;
   grid-template-columns: 40px 272px 40px 272px 40px;
   grid-template-rows: 32.5px [header-start] 38px 42.5px [socialsub-start] 94.9px [divider-start] 18px 14.5px [form-start] 453px [signin-start] 70px;
-  position: absolute;
-  top: 10px;
-  left: 50px;
+  margin: auto;
   width: 664px;
   height: 763px;
   background: #ffffff 0% 0% no-repeat padding-box;
