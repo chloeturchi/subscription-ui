@@ -14,21 +14,27 @@ const Form = () => {
   const [password, setPassword] = useState('');
   const [confirmedPassword, setConfirmedPassword] = useState('');
 
+  const [genre, setGenre] = useState('none');
+
   const [isChecked, setIsChecked] = useState({
     conditions: false,
     newsletter: false,
   });
 
-  const handleChange = ({ target: { name, checked } }) => {
+  const handleChangeCheck = ({ target: { name, checked } }) => {
     setIsChecked({
       ...isChecked,
       [name]: checked,
     });
   };
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    alert(
+  const handleChangeSelect = (e) => {
+    setGenre(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(
       `Submitting ${name}, ${firstName}, ${email}, ${tel}, ${password}, ${confirmedPassword}`
     );
   };
@@ -36,7 +42,7 @@ const Form = () => {
   return (
     <StyledForm submit={handleSubmit}>
       <GenreContainer>
-        <GenreSelect />
+        <GenreSelect onChange={handleChangeSelect} value={genre} />
       </GenreContainer>
       <NameContainer>
         <Input
@@ -99,7 +105,7 @@ const Form = () => {
           text="J'accepte les conditions d'utilisation et la politique de
           confidentialité"
           checked={isChecked['conditions']}
-          onChange={handleChange}
+          onChange={handleChangeCheck}
         />
       </ConditionsContainer>
       <NewsletterContainer>
@@ -109,7 +115,7 @@ const Form = () => {
           text="Je m'inscrit à la Newsletter pour me tenir informé de toutes les
           dernières actualités"
           checked={isChecked['newsletter']}
-          onChange={handleChange}
+          onChange={handleChangeCheck}
         />
       </NewsletterContainer>
       <SubmitContainer>

@@ -3,19 +3,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Text from '../../UIElements/Text';
 
-const GenreSelect = () => {
+const GenreSelect = ({ value, onChange }) => {
   return (
     <label>
       <Text margin="0 0 5px 0" size="14px">
         Genre
       </Text>
-      <Input value="none" onChange="">
+      <Input value={value} onChange={onChange}>
         <option value="none" disabled>
           Sélectionner
         </option>
         <option value="m">M.</option>
         <option value="mme">Mme</option>
-        <option value="autre">Autre</option>
       </Input>
     </label>
   );
