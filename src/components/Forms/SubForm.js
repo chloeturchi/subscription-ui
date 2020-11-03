@@ -40,7 +40,7 @@ const Form = () => {
   };
 
   return (
-    <StyledForm submit={handleSubmit}>
+    <StyledForm onSubmit={handleSubmit}>
       <GenreContainer>
         <GenreSelect onChange={handleChangeSelect} value={genre} />
       </GenreContainer>
@@ -119,7 +119,7 @@ const Form = () => {
         />
       </NewsletterContainer>
       <SubmitContainer>
-        <Submit type="submit" value="Submit" />
+        <Submit type="submit" value="S'inscrire" />
       </SubmitContainer>
     </StyledForm>
   );

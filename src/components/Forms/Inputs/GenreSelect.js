@@ -7,7 +7,7 @@ import Text from '../../UIElements/Text';
 const GenreSelect = ({ value, onChange }) => {
   return (
     <label>
-      <Text margin="0 0 5px 0" size="14px">
+      <Text margin="0px 0px 5px 0px" size="14px">
         Genre
       </Text>
       <Input value={value} onChange={onChange}>
@@ -34,6 +34,9 @@ const Input = styled.select`
   padding: 0px 9px;
   option {
     width: 200px;
+  }
+  option[value='none'] {
+    color: #acacac;
   }
 `;
 
