@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 import Icon from './Icon';
@@ -7,12 +8,18 @@ import Text from './Text';
 const SocialSubButton = ({ iconImg, text, onClick }) => {
   return (
     <Button onClick={onClick}>
-      <Icon height="20px" src={iconImg} />
+      <Icon height="20px" width="20px" src={iconImg} />
       <Text margin="0px 11px" size="16px">
         {text}
       </Text>
     </Button>
   );
+};
+
+SocialSubButton.propTypes = {
+  iconImg: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 const Button = styled.button`

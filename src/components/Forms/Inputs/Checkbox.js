@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 import Text from '../../UIElements/Text';
@@ -15,6 +16,14 @@ const Checkbox = ({ name, text, textSize, onChange, checked }) => {
       <Text size={textSize}>{text}</Text>
     </Label>
   );
+};
+
+Checkbox.propTypes = {
+  name: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  textSize: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  checked: PropTypes.bool.isRequired,
 };
 
 const Label = styled.label`

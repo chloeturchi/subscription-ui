@@ -1,19 +1,33 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 import Text from '../../UIElements/Text';
 
-const Input = ({ inputName, type, name }) => {
+const Input = ({ inputName, type, name, value, onChange }) => {
   return (
     <label>
       <Text margin="0 0 5px 0" size="14px">
         {inputName}
       </Text>
       <Container>
-        <StyledInput type={type} name={name} />
+        <StyledInput
+          type={type}
+          name={name}
+          value={value}
+          onChange={onChange}
+        />
       </Container>
     </label>
   );
+};
+
+Input.propTypes = {
+  inputName: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 const Container = styled.div`

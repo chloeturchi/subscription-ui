@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 import Text from '../../UIElements/Text';
@@ -18,6 +19,11 @@ const GenreSelect = ({ value, onChange }) => {
       </Input>
     </label>
   );
+};
+
+GenreSelect.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 const Input = styled.select`

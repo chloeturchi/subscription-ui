@@ -8,7 +8,7 @@ import upArrowIcon from '../../assets/images/up-arrow.svg';
 const BackLink = () => {
   return (
     <Link href="/">
-      <Icon height="10px" src={upArrowIcon} />
+      <Icon height="12px" width="8px" src={upArrowIcon} />
       <Text margin="0px 6px" size="14px">
         Retour
       </Text>
