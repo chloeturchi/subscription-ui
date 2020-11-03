@@ -1,4 +1,4 @@
-# React Subscription Interface
+# React Subscription UI
 
 ## Introduction
 Subscription page interface
