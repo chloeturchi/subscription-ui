@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
-import Text from '../../UIElements/Text';
+import Text from '../../Text';
 
 const Input = ({ inputName, type, name, value, onChange }) => {
   return (

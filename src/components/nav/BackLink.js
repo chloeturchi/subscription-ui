@@ -1,8 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import Icon from '../UIElements/Icon';
-import Text from '../UIElements/Text';
+import Icon from '../Icon';
+import Text from '../Text';
 import upArrowIcon from '../../assets/images/up-arrow.svg';
 
 const BackLink = () => {

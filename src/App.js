@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SignUpPage from '../pages/SignUpPage';
+import SignUpPage from './screens/SignUpPage';
 import './App.module.css';
 
 const App = () => {

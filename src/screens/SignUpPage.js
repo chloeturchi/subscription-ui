@@ -1,13 +1,13 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import PageTitle from '../components/UIElements/PageTitle';
-import SocialSubButton from '../components/UIElements/SocialSubButton';
-import BackLink from '../components/NavComponents/BackLink';
-import Divider from '../components/UIElements/Divider';
-import Text from '../components/UIElements/Text';
-import SubForm from '../components/Forms/SubForm';
-import NavLink from '../components/NavComponents/NavLink';
+import PageTitle from '../components/PageTitle';
+import SocialSubButton from '../components/SocialSubButton';
+import BackLink from '../components/nav/BackLink';
+import Divider from '../components/Divider';
+import Text from '../components/Text';
+import SubForm from '../components/form/SubForm';
+import NavLink from '../components/nav/NavLink';
 import googleIcon from '../assets/images/google-icon.svg';
 import fbIcon from '../assets/images/facebook-icon.svg';
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Input from './Inputs/Input';
-import GenreSelect from './Inputs/GenreSelect';
-import Checkbox from './Inputs/Checkbox';
-import Submit from './Inputs/Submit';
+import Input from './input/Input';
+import GenreSelect from './input/GenreSelect';
+import Checkbox from './input/Checkbox';
+import Submit from './input/Submit';
 
 const Form = () => {
   const [name, setName] = useState('');
