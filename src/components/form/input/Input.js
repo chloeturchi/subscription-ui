@@ -38,6 +38,7 @@ const Container = styled.div`
 const StyledInput = styled.input`
   width: 100%;
   background-color: #f5f5f5;
+  border-radius: 4px;
   border: none;
 `;
 

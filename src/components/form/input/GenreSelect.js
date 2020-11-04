@@ -30,6 +30,7 @@ const Input = styled.select`
   width: 272px;
   height: 30px;
   background-color: #f5f5f5;
+  border-radius: 4px;
   border: none;
   padding: 0px 9px;
   option {
