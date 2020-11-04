@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/subscription-ui/static/css/main.09dbc072.chunk.css",
+    "main.js": "/subscription-ui/static/js/main.26e43fbf.chunk.js",
+    "main.js.map": "/subscription-ui/static/js/main.26e43fbf.chunk.js.map",
+    "runtime-main.js": "/subscription-ui/static/js/runtime-main.7f472f3a.js",
+    "runtime-main.js.map": "/subscription-ui/static/js/runtime-main.7f472f3a.js.map",
+    "static/js/2.eb510140.chunk.js": "/subscription-ui/static/js/2.eb510140.chunk.js",
+    "static/js/2.eb510140.chunk.js.map": "/subscription-ui/static/js/2.eb510140.chunk.js.map",
+    "index.html": "/subscription-ui/index.html",
+    "static/css/main.09dbc072.chunk.css.map": "/subscription-ui/static/css/main.09dbc072.chunk.css.map",
+    "static/js/2.eb510140.chunk.js.LICENSE.txt": "/subscription-ui/static/js/2.eb510140.chunk.js.LICENSE.txt",
+    "static/media/facebook-icon.4f87f09f.svg": "/subscription-ui/static/media/facebook-icon.4f87f09f.svg",
+    "static/media/google-icon.f4486809.svg": "/subscription-ui/static/media/google-icon.f4486809.svg",
+    "static/media/up-arrow.b6ba756d.svg": "/subscription-ui/static/media/up-arrow.b6ba756d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f472f3a.js",
+    "static/js/2.eb510140.chunk.js",
+    "static/css/main.09dbc072.chunk.css",
+    "static/js/main.26e43fbf.chunk.js"
+  ]
+}
