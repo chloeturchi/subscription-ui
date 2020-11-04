@@ -1,7 +1,7 @@
 # React Subscription UI
 
 ## Introduction
-Subscription page interface
+Subscription page interface.
 You can see the result [here](https://chloeturchi.github.io/subscription-ui/)
 
 ## Tools
