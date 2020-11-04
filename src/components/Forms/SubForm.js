@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import styled from 'styled-components';
+
 import Input from './Inputs/Input';
 import GenreSelect from './Inputs/GenreSelect';
 import Checkbox from './Inputs/Checkbox';
@@ -34,8 +34,10 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('Checkboxes: ', isChecked);
+    console.log('Genre: ', genre);
     console.log(
-      `Submitting ${name}, ${firstName}, ${email}, ${tel}, ${password}, ${confirmedPassword}`
+      `Name: ${name}, FirstName: ${firstName}, Email: ${email}, Tel: ${tel}, Password: ${password}, ConfirmedPassword: ${confirmedPassword}`
     );
   };
 

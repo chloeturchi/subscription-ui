@@ -14,8 +14,8 @@ const GenreSelect = ({ value, onChange }) => {
         <option value="none" disabled>
           Sélectionner
         </option>
-        <option value="m">M.</option>
-        <option value="mme">Mme</option>
+        <option value="M.">M.</option>
+        <option value="Mme">Mme</option>
       </Input>
     </label>
   );
