@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Input from './input/Input';
 import GenreSelect from './input/GenreSelect';
 import Checkbox from './input/Checkbox';
-import Submit from './input/Submit';
+import { SubmitInput } from '../../stories/SubmitInput';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -121,7 +121,12 @@ const Form = () => {
         />
       </NewsletterContainer>
       <SubmitContainer>
-        <Submit type="submit" value="S'inscrire" />
+        <SubmitInput
+          backgroundColor={null}
+          label="S'inscrire"
+          primary
+          size="medium"
+        />
       </SubmitContainer>
     </StyledForm>
   );

@@ -32,12 +32,10 @@ const Input = styled.select`
   background-color: #f5f5f5;
   border-radius: 4px;
   border: none;
+  color: #535353;
   padding: 0px 9px;
   option {
     width: 200px;
-  }
-  option[value='none'] {
-    color: #acacac;
   }
 `;
 
